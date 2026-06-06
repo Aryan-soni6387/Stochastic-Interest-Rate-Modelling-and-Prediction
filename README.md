@@ -179,10 +179,39 @@ Stochastic-Interest-Rate-Modelling-and-Prediction/
 
 # How to Run
 
-1. Clone the repository.
-2. Open the notebook in Jupyter Notebook, VS Code, or Google Colab.
-3. Ensure the dataset files remain inside the `data/` directory.
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Aryan-soni6387/Stochastic-Interest-Rate-Modelling-and-Prediction.git
+cd Stochastic-Interest-Rate-Modelling-and-Prediction
+```
+
+2. Open the notebook in Google Colab, Jupyter Notebook, or VS Code.
+
+3. Make sure the dataset files are present inside the `data/` folder:
+
+```text
+data/
+├── train_data.csv
+├── test_data.csv
+├── test_data_3M.csv
+```
+
 4. Run all notebook cells sequentially.
+
+5. The notebook will:
+   - Calibrate the CIR model
+   - Reconstruct Treasury yields
+   - Evaluate model performance
+   - Train and evaluate the Two-Factor CIR model
+   - Generate prediction outputs
+
+## Output
+
+- Calibrated model parameters
+- Yield curve predictions
+- Performance metrics (R², RMSE)
+- `two_factor_cir_predictions.csv`
 
 ---
 
